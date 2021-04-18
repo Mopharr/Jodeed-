@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Reuseable  */
+:root{
+
+    /*=============== COLOR ===============*/
+    --background-color: #0D2149;
+    --button: #60492C;
+    --highlight:#208AAE;
+    --text: #fdfffc;
+    --hover: #F9EBE0;
+    --border: #463F1A;
+
+
+    /* =============== FONT & TYPOGRAPHY   ===========*/
+    --body-font: 'Roboto Mono', monospace;;
+    --biggest-font-size: 15.5rem;
+    --media-query-biggest-font: 12.5rem;
+    --media-query-medium-font: 10.5rem;
+    --media-query-small-font: 7.5rem;
+    --media-query-smallest-font:5.5rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    --mobile-font-big: 4.5rem;
+    --mobile-font-medium: 3.5rem
+
+    /* ======== */
+}
+
+nav{
+    height: 10px;
+    background-color: rgba(32,138,174, 0.7);
+
+}
