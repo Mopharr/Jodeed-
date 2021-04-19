@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: var(--body-font);
+}
 /* Reuseable  */
 :root{
 
@@ -31,11 +34,103 @@
     --mobile-font-big: 4.5rem;
     --mobile-font-medium: 3.5rem
 
-    /* ======== */
+    /* ==================  Nav Bar ===================== */
 }
 
-nav{
-    height: 10px;
-    background-color: rgba(32,138,174, 0.7);
 
+nav{
+    height: 7vh;
+    background-color: rgba(32,138,174, .4);
+}
+.l-j{
+    color: var(--background-color);
+}
+.fa-cog{
+    color: var(--highlight);
+}
+.l-d{
+    color: #4D7EA8;
+}
+.l-e{
+    color: var(--background-color);
+}
+.fa-analytics{
+    color: #000;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-top: -60px;
+}
+.nav-links li a{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    float: right;
+}
+label{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 60px;
+    padding: 0 30px;
+}
+@media screen and (max-width: 960px){
+    .nav-links{
+        position: fixed;
+        background-color:  rgba(32,138,174, .7);
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -20%);
+        -webkit-clip-path: circle(100px at 90% -20%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+
+    .nav-links.open{
+        clip-path: circle(1200px at 90% -10%);
+        -webkit-clip-path: circle(1200px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-links li a{
+        font-size: 25px;
+    }
+    .nav-links li:nth-child(1){
+        transform: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transform: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transform: all 0.5s ease 0.6s;
+    }
+    li.fade{
+        opacity: 1;
+    }
+    .line{
+        width: 30px;
+        height: 3px;
+        margin: 5px;
+        background-color: #fff;
+        
+    }
+    nav{
+        position: relative;
+    }
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+    }
 }
