@@ -10,12 +10,12 @@ body{
 :root{
 
     /*=============== COLOR ===============*/
-    --background-color: #0D2149;
-    --button: #60492C;
-    --highlight:#208AAE;
-    --text: #fdfffc;
+    --black: #000000;
+    --yello: #F9A620;
+    --blue:#3D5A80;
+    --platinium: #E5E5E5;
     --hover: #F9EBE0;
-    --border: #463F1A;
+    --white: #FFFFFF;
 
 
     /* =============== FONT & TYPOGRAPHY   ===========*/
@@ -40,7 +40,10 @@ body{
 
 nav{
     height: 7vh;
-    background-color: rgba(32,138,174, .4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 5px;
 }
 .l-j{
     color: var(--background-color);
@@ -72,9 +75,19 @@ nav{
     color: #fff;
     text-decoration: none;
     float: right;
+    background-color: var(--blue);
+    padding: 15px;
+    border-radius: 4px;
+    transition: all 0.4s ease;
 }
+.nav-links li a:hover{
+    background-color: transparent;
+    border: 2px solid var(--blue);
+    color: var(--blue);
+}
+
 label{
-    font-size: 25px;
+    font-size: 35px;
     font-weight: bold;
     line-height: 60px;
     padding: 0 30px;
@@ -82,7 +95,7 @@ label{
 @media screen and (max-width: 960px){
     .nav-links{
         position: fixed;
-        background-color:  rgb(32,138,174);
+        background-color: var(--platinium);
         height: 100vh;
         width: 100%;
         flex-direction: column;
@@ -96,6 +109,7 @@ label{
         clip-path: circle(1600px at 90% -10%);
         -webkit-clip-path: circle(1600px at 90% -10%);
         pointer-events: all;
+        top: 50px;
     }
     .nav-links li{
         opacity: 0;
@@ -119,12 +133,10 @@ label{
         width: 30px;
         height: 3px;
         margin: 5px;
-        background-color: #fff;
+        background-color: var(--blue);
         
     }
-    nav{
-        position: relative;
-    }
+    
     .hamburger{
         position: absolute;
         cursor: pointer;
@@ -135,5 +147,59 @@ label{
     }
 }
 
-/* ============== Carousel  ==============*/
+/* ============== Header ==============*/
+
+.main{
+    background:url(./images/qatalyst-global.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.cap{
+    padding: 20em 1em;
+}
+
+.main h1{
+    font-size: 80px;
+    color: var(--black);
+    padding: 1rem;
+}
+.main h1::after{
+   
+
+}
+
+
+/* ============ second section ===================== */
+
+.content-cap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.content-cap h1{
+    text-align: center;
+    margin: auto;
+    font-size: 50px;
+}
+.content{
+    background-color: ;
+}
+.left-content{
+    background-color: #fff;
+    width: 50%;
+}
+.right-content{
+    width: 50%;
+    background: var(--background-color);
+}
+.right-content img{
+    width: 100%;
+}
+.main-cap h2, h1{
+    color: var(--background-color);
+  
+}
 
