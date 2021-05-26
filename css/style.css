@@ -193,13 +193,14 @@ label {
 
 .about {
   background: var(--hover);
-  color: #fff;
+  color: #1a1423;
   padding: 50px;
-  height: 60vh;
   text-align: center;
   align-items: center;
   margin: auto;
-  display: flex;
+}
+.about-us{
+    
 }
 .about-cap-right h1 {
   align-items: center;
