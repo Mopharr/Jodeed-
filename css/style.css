@@ -11,11 +11,11 @@ body{
 
     /*=============== COLOR ===============*/
     --black: #000000;
-    --yello: #F9A620;
-    --blue:#3D5A80;
-    --platinium: #E5E5E5;
-    --hover: #F9EBE0;
-    --white: #FFFFFF;
+    --dark: #1A1423;
+    --yello: #FFAE03;
+    --blood: #E9190F;
+    --hover: #FDFFFC;
+    --orange: #F44039;
 
 
     /* =============== FONT & TYPOGRAPHY   ===========*/
@@ -43,19 +43,19 @@ nav{
     position: absolute;
     left: 0;
     right: 0;
-    margin-top: 5px;
+    background-color: var(--dark);
 }
 .l-j{
-    color: var(--background-color);
+    color: var(--hover);
 }
 .fa-cog{
-    color: var(--highlight);
+    color: var(--hover);
 }
 .l-d{
-    color: #4D7EA8;
+    color: var(--hover);
 }
 .l-e{
-    color: var(--background-color);
+    color: var(--hover);
 }
 .fa-analytics{
     color: #000;
@@ -68,22 +68,19 @@ nav{
     justify-content: space-around;
     align-items: center;
     margin-left: auto;
-    margin-top: -60px;
 }
 .nav-links li a{
     font-size: 20px;
     color: #fff;
     text-decoration: none;
     float: right;
-    background-color: var(--blue);
     padding: 15px;
     border-radius: 4px;
     transition: all 0.4s ease;
 }
 .nav-links li a:hover{
-    background-color: transparent;
-    border: 2px solid var(--blue);
-    color: var(--blue);
+    background-color: var(--hover);
+    color: var(--dark);
 }
 
 label{
@@ -91,11 +88,13 @@ label{
     font-weight: bold;
     line-height: 60px;
     padding: 0 30px;
+    position: absolute;
+    z-index: 2;
 }
 @media screen and (max-width: 960px){
     .nav-links{
         position: fixed;
-        background-color: var(--platinium);
+        background-color: var(--dark);
         height: 100vh;
         width: 100%;
         flex-direction: column;
@@ -103,6 +102,7 @@ label{
         -webkit-clip-path: circle(100px at 90% -20%);
         transition: all 1s ease-out;
         pointer-events: none;
+        z-index: 1;
     }
 
     .nav-links.open{
@@ -133,7 +133,7 @@ label{
         width: 30px;
         height: 3px;
         margin: 5px;
-        background-color: var(--blue);
+        background-color: var(--hover);
         
     }
     
@@ -145,33 +145,87 @@ label{
         transform: translate(-5%, -50%);
         z-index: 2;
     }
-}
 
+}
 /* ============== Header ==============*/
 
 .main{
-    background:url(./images/qatalyst-global.jpg);
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)) ,url(./images/qatalyst-global.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
 }
-.cap{
-    padding: 20em 1em;
-}
-
-.main h1{
-    font-size: 80px;
-    color: var(--black);
-    padding: 1rem;
-}
-.main h1::after{
-   
-
+.main-cap{
+    background: linear-gradient(90deg, rgba(255,130,0,1) 30%, rgba(255,0,43,1) 90%);
+    padding: 10px;
+    height: 40%;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    margin-left: 70px;
+    transform: translate(50%, 100%);
 }
 
+.main-cap h1{
+    margin: 25px 10px;
+    color: var(--hover);
+    font-weight: 300;
 
-/* ============ second section ===================== */
+}
+
+.main-cap h4{
+    color: var(--hover);
+    font-weight: 100;
+    margin: auto 10px 30px;
+    font-size: 16px;
+}
+
+.main-cap a{
+    background-color: var(--hover);
+    padding: 15px;
+    text-decoration: none;
+    color: var(--dark);
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1440px){
+    .main-cap{
+        left: 10%;
+        top: inherit;
+        transform: translate(10%, 100%);
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .main-cap{
+        left: 0%;
+        top: inherit;
+        transform: translate(0%, 100%);
+    }
+}
+
+
+
+/* ========== About Section ========== */
+
+.about{
+    background: var(--dark);
+    color: #fff;
+    padding: 50px;
+    height: 60vh;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    display: flex;
+
+}
+.about-cap-right h1{
+    align-items: center;
+}
+
+
+/* ============ Content section ===================== */
 
 .content-cap{
     display: flex;
@@ -184,9 +238,6 @@ label{
     margin: auto;
     font-size: 50px;
 }
-.content{
-    background-color: ;
-}
 .left-content{
     background-color: #fff;
     width: 50%;
@@ -198,8 +249,5 @@ label{
 .right-content img{
     width: 100%;
 }
-.main-cap h2, h1{
-    color: var(--background-color);
-  
-}
+
 
