@@ -241,68 +241,28 @@ label {
   padding: 50px;
 }
 .about > div {
-  width: 80%;
+  width: 95%;
   margin: auto;
   padding: 10px;
 }
-.about > div h2 {
-  text-align: center;
-}
-.about > div .h2,
-h6 {
+.about > div h2 ,  h6 {
   margin: 15px auto;
+  text-align: center;
 }
 .about .row {
   margin-top: 20px;
 }
-.about img {
+.about-us{
   text-align: center;
 }
-
-/* ============ Content section ===================== */
-
-.content-cap {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-}
-.content-cap h1 {
-  text-align: center;
-  margin: auto;
-  font-size: 50px;
-}
-.left-content {
-  background-color: #fff;
-  width: 50%;
-}
-.right-content {
-  width: 50%;
-  background: var(--background-color);
-}
-.right-content img {
-  width: 100%;
+.about-us h5{
+  text-align:left ;
 }
 
-/* =========== Event ============= */
+/* ============ sponsorship ===================== */
 
-.carousel-item {
-  height: 70vh;
-  background: url(./images.jpg);
-  position: relative;
+.sponsorship{
+  padding: 10px;
+  background-color: #f5f5f5;
 }
 
-.container {
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding-bottom: 50px;
-}
-.carousel-item img {
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
