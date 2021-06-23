@@ -351,9 +351,8 @@ label {
 
 
 .team img{
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
+  width: 25%;
+  height: 25%;
   margin-bottom: 30px;
 }
 
