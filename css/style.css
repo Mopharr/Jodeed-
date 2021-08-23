@@ -47,7 +47,7 @@ nav {
 }
 label img {
     width: 160px;
-    height: 85px;
+    height: 75px;
 }
 .nav-links {
   display: flex;
@@ -339,8 +339,8 @@ label {
 
 
 .team img{
-  width: 25%;
-  height: 25%;
+  width: 100px;
+  height: 100px;
   margin-bottom: 30px;
 }
 .caption{
