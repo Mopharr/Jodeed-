@@ -233,7 +233,7 @@ label {
   padding: 50px;
 }
 .about > div {
-  width: 95%;
+  width: 100%;
   margin: auto;
   padding: 10px;
 }
@@ -250,6 +250,10 @@ label {
 .about-us h5{
   text-align:left ;
 }
+/* @media all and (max-width: 340px) {
+  .about-main h6 {
+    width: 80%;
+} */
 
 /* ============ sponsorship ===================== */
 
