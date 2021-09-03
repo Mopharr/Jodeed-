@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-weight: 600;
 }
 
 .swiper {
@@ -10,24 +11,23 @@
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./images/qatalyst-global.jpg);
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+     text-align: center;
+    font-size: 18px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/qatalyst-global.jpg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .swiper-slide img {
@@ -213,13 +213,13 @@ label {
 .main-text h1 {
   padding: 0px 10px;
   color: var(--hover);
-  font-weight: 300;
+  font-weight: 800;
   font-size: 30px;
 }
 
 .main-text h4 {
   color: var(--hover);
-  font-weight: 100;
+  font-weight: 600;
   margin: auto 10px 30px;
   font-size: 14px;
 }
@@ -278,6 +278,7 @@ label {
 .about > div h2 ,  h6 {
   margin: 15px auto;
   text-align: center;
+  font-weight: 800;
 }
 .about .row {
   margin-top: 20px;
@@ -285,8 +286,13 @@ label {
 .about-us{
   text-align: center;
 }
+.about-us h3{
+  text-align: center;
+  font-weight: 800;
+}
 .about-us h5{
   text-align:left ;
+  font-weight: 700;
 }
 /* @media all and (max-width: 340px) {
   .about-main h6 {
@@ -301,10 +307,12 @@ label {
   display: flex;
   width: 100%;
   margin: auto;
+  
 }
 .sponsorship h2{
   margin: 30px auto;
   text-align: center;
+  font-weight: 700;
 }
 
 .spon-main{
@@ -321,6 +329,7 @@ label {
   text-align: center;
   font-size: 18px;
   margin: 20px 0;
+  font-weight: 800;
 }
 
 .sponsorship li:before {
@@ -340,6 +349,12 @@ label {
   margin: 10px;
   cursor: pointer;
   color: #1a1423;
+  display: flex;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
 }
 @media (max-width: 1000px) {
   .spon-cap{
@@ -370,6 +385,7 @@ label {
   text-align: center;
   margin: 30px;
   font-size: 30px;
+  font-weight: 800;
 }
 .top{
   padding: 20px;
@@ -381,15 +397,23 @@ label {
 
 .top h3{
  font-size: 20px;
+ font-weight: 800;
 }
 .top h4{
   font-size: 16px;
+  font-weight: 800;
 }
 .team img{
   width: 100px;
   height: 100px;
   margin-bottom: 30px;
 }
+footer hr{
+  color: #000;
+  background-color: #000;
+  
+}
 .caption{
   text-align: center;
+  font: 900;
 }
