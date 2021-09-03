@@ -3,12 +3,49 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: var(--body-font);
+
+.swiper {
+  width: 100%;
+  height: 100%;
 }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./images/qatalyst-global.jpg);
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 li{
   list-style: none;
 }
+
 /* Reuseable  */
 :root {
   /*=============== COLOR ===============*/
@@ -43,6 +80,7 @@ nav {
   position: absolute;
   left: 0;
   right: 0;
+  z-index: 10;
   background-color: var(--dark);
 }
 label img {
@@ -137,12 +175,11 @@ label {
 /* ============== Header ==============*/
 
 .main {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./images/qatalyst-global.jpg);
+ 
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   /* padding-top: 150px; */
   display: flex;
   /* justify-content: center;
@@ -194,6 +231,7 @@ label {
   color: var(--dark);
   margin: 10px;
 }
+ 
 
 @media (max-width: 950px) {
   .main-text{
@@ -331,17 +369,22 @@ label {
 .team h2{
   text-align: center;
   margin: 30px;
+  font-size: 30px;
 }
 .top{
   padding: 20px;
   border-radius: 10px;
   margin: 30px;
-  width: 70%;
   height: 90%;
   text-align: center;
 }
 
-
+.top h3{
+ font-size: 20px;
+}
+.top h4{
+  font-size: 16px;
+}
 .team img{
   width: 100px;
   height: 100px;
