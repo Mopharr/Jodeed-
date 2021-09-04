@@ -190,11 +190,11 @@ label {
 .main-text {
   position: absolute;
   top: 50%;
-  left: 30%;
-  transform: translate(-70%, -50%);
-  width: 40%;
+  left: 35%;
+  transform: translate(-35%, -50%);
+  width: 35%;
   height: 30%;
-  margin: 0% 30% 0% 10%;
+
   background: linear-gradient(
     90deg,
     rgba(255, 130, 0, 1) 30%,
@@ -411,8 +411,10 @@ label {
 footer hr{
   color: #000;
   background-color: #000;
-  
+
 }
+/* ========= Event ====== */
+
 .caption{
   text-align: center;
   font: 900;
