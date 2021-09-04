@@ -425,7 +425,7 @@ footer hr{
   width: 50%;
   height: 70vh;
   background-repeat: no-repeat;
-  
+  background-size: contain;
 }
 .event-txt{
   width: 50%;
