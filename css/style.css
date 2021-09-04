@@ -411,11 +411,38 @@ label {
 footer hr{
   color: #000;
   background-color: #000;
+  margin-top: 0;
 
 }
 /* ========= Event ====== */
 
+.event{
+  width: 100%;
+  display: flex;
+}
+.event-img{
+  background-image: url('./images/event.jpeg');
+  width: 50%;
+  height: 70vh;
+}
+.event-txt{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.event-txt a{
+  border: 1px solid #000;
+  padding: 10px 15px;
+  color: #000;
+  text-decoration: none;
+}
+
+
+
 .caption{
   text-align: center;
   font: 900;
+
 }
