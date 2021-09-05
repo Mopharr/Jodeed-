@@ -146,12 +146,22 @@ label {
   }
   .nav-links li:nth-child(1) {
     transform: all 0.5s ease 0.2s;
+    opacity: 1;
   }
   .nav-links li:nth-child(2) {
     transform: all 0.5s ease 0.4s;
+    opacity: 1;
+
   }
   .nav-links li:nth-child(3) {
     transform: all 0.5s ease 0.6s;
+    opacity: 1;
+
+  }
+  .nav-links li:nth-child(4) {
+    transform: all 0.5s ease 0.6s;
+    opacity: 1;
+
   }
   li.fade {
     opacity: 1;
