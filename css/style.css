@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-weight: 600;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 .swiper {
   width: 100%;
@@ -332,7 +335,7 @@ label {
   border-radius: 8px;
   width: 25%;
   margin: auto;
-  box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: -20px 20px 15px rgba(0, 0, 0, 0.3);
 }
 .sponsorship li{
   text-align: center;

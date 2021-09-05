@@ -28,11 +28,11 @@
         </label>
 
         <ul class="nav-links">
-            <li> <a href="/">Home</a></li>
-            <li> <a href="about">About</a></li>
-            <li> <a href="event">Event</a></li>
-            <!-- <li> <a href="#">Sponsors</a></li> -->
-            <li> <a href="#">Contact</a></li>
+            <li> <a href="index.html#main">Home</a></li>
+            <li> <a href="index.html#about">About</a></li>
+            <li> <a href="#sponsorship">Sponsors</a></li>
+            <li> <a href="#event">Event</a></li>
+            <li> <a href="#contact">Contact</a></li>
         </ul>
 
         <div class="hamburger">
@@ -42,9 +42,7 @@
         </div>
     </nav>
 
-    <header class="main">
-        
-
+    <header id="home" class="main">
     <!-- Swiper -->
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -121,14 +119,11 @@
             },
         });
     </script>
-        
-       
-
     </header>
 
 
 
-    <section class="about container-fluid">
+    <section id="about" class="about container-fluid">
         <div class="about-main">
             <h2>About us </h2>
             <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, minima ea, unde totam cum sequi
@@ -171,7 +166,7 @@
         </div>
     </section>
 
-    <section class="sponsorship container-fluid">
+    <section id="sponsorship" class="sponsorship container-fluid">
         <div class="spon-cap col row ">
             <h2>For Sponsorship: </h2>
 
@@ -188,7 +183,7 @@
                     <li>Corporate promotion material in delegate bag</li>
                     <li>Company name or logo in key position on Event websiten</li>
                 </ul>
-                <a href="#">Learn More</a>
+                <a href="https://www.linkedin.com/posts/jodeed-fintech-summit_jodeed-fintech-summit-will-be-the-foremost-activity-6840284991239319552-frb6">Learn More</a>
             </div>
             <div class="spon-main ">
                 <h2>Silver Sponsors <br> 350,000 <i class="fas fa-star"></i><i class="fas fa-star"></i></h2>
@@ -201,7 +196,7 @@
                     <li>Full page advertorial in event brochure </li>
                     <li>Corporate promotion material in delegate bag</li>
                 </ul>
-                <a href="#">Learn More</a>
+                <a href="https://www.linkedin.com/posts/jodeed-fintech-summit_jodeed-fintech-summit-will-be-the-foremost-activity-6840284991239319552-frb6">Learn More</a>
             </div>
             <div class="spon-main ">
                 <h2>Bronze Sponsors <br> 150,000 <i class="fas fa-star"></i></h2>
@@ -212,7 +207,7 @@
                     <li>Full page advertorial in event brochure </li>
                     <li>Company name or logo in key position on Event </li>
                 </ul>
-                <a href="#">Learn More</a>
+                <a href="https://www.linkedin.com/posts/jodeed-fintech-summit_jodeed-fintech-summit-will-be-the-foremost-activity-6840284991239319552-frb6">Learn More</a>
             </div>
         </div>
     </section>
@@ -267,17 +262,20 @@
             </div>
         </div>
     </section>
-    <section class="event">
-        <div class="event-img">
-            <img src="./css/images/event.jpeg" alt="">
-        </div>
-        <div class="event-txt">
-            <p>The event go sweet die, if you like miss am, that one na your palaba</p>
-            <p>Coming up: 12-12-2022</p>
-            <a href="#">Register Today</a>
+    <section id="event" >
+        <h2>Upcoming Event:</h2>
+        <div class="event">
+            <div class="event-img">
+                <img src="./css/images/event.jpeg" alt="">
+            </div>
+            <div class="event-txt">
+                <p>The event go sweet die, if you like miss am, that one na your palaba</p>
+                <p>Coming up: 12-12-2022</p>
+                <a href="#">Register Today</a>
+            </div>
         </div>
     </section>
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="comment">
             <h2>Review:</h2>
             <input type="text" name="name" id="" placeholder="Name">
