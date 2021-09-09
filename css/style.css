@@ -312,6 +312,7 @@ label {
 .about {
   background: #fff;
   color: var(--dark);
+  line-height: 30px;
 }
 .about > div {
   width: 100%;
